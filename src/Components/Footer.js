@@ -3,17 +3,17 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="pt-[50px] px-10 max-md:px-6 bg-[#171515] text-white pb-[20px] ">
-      <div className="max-md:grid-cols-2 grid grid-cols-3 gap-6 max-md:gap-8">
+      <div className="max-sm:gap-4 max-md:grid-cols-2 grid grid-cols-3 gap-6 max-md:gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-lg">Contacts</h1>
-          <a className="flex items-center gap-2" href="tel:9823047073">
+          <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">Contacts</h1>
+          <a className="flex items-center gap-2 max-sm:text-[12px]" href="tel:9823047073">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 max-sm:w-4 max-sm:h-4"
             >
               <path
                 strokeLinecap="round"
@@ -23,14 +23,14 @@ const Footer = () => {
             </svg>
             <span>+97798230470743</span>
           </a>
-          <a className="flex items-center gap-2" href="mailto:rollinrabin@gmail.com">
+          <a className="flex items-center max-sm:text-[12px] gap-2" href="mailto:rollinrabin@gmail.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 max-sm:w-4 max-sm:h-4"
             >
               <path
                 strokeLinecap="round"
@@ -40,14 +40,14 @@ const Footer = () => {
             </svg>
             <span>rollinrabin@gmail.com</span>
           </a>
-          <a className="flex items-center gap-2" href="">
+          <a className="flex items-center max-sm:text-[12px] gap-2" href="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 max-sm:w-4 max-sm:h-4"
             >
               <path
                 strokeLinecap="round"
@@ -58,14 +58,14 @@ const Footer = () => {
             <span>9823047073</span>
           </a>
         </div>
-        <div className="flex flex-col gap-4">
-            <h1 className="font-semibold text-lg">Social media</h1>
-            <a className="flex gap-2" href="https://www.facebook.com/rabin.bhn.20"><img className="w-[24px] object-contain" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"/><span>Rabin Bhandari</span></a>
-            <a className="flex gap-2" href="https://github.com/RabiCB?tab=repositories"><img className="w-[24px] object-contain" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/><span>RabiCB</span></a>
-            <a className="flex gap-2" href=""><img className="w-[24px] object-contain" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"/><span>Chandra Bhandari</span></a>
+        <div className="flex flex-col max-sm:text-[12px]  gap-4">
+            <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">Social media</h1>
+            <a className="flex gap-2" href="https://www.facebook.com/rabin.bhn.20"><img className="w-[24px] max-sm:w-[20px] object-contain" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"/><span>Rabin Bhandari</span></a>
+            <a className="flex gap-2" href="https://github.com/RabiCB?tab=repositories"><img className="w-[24px] max-sm:w-[20px]  object-contain" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/><span>RabiCB</span></a>
+            <a className="flex gap-2" href=""><img className="w-[24px] object-contain max-sm:w-[20px] " src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"/><span>Chandra Bhandari</span></a>
         </div>
         <form className="flex  flex-col gap-4  ">
-            <h1 className="font-semibold text-lg">Send me message</h1>
+            <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">Send me message</h1>
             <input type="text" className="h-[40px] rounded-lg pl-2 outline-none text-black" placeholder="type something"/>
             <button className="bg-blue-500 text-white rounded-lg p-2">Send</button>
         </form>

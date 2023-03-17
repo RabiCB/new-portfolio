@@ -24,5 +24,11 @@ export const skills=[
         id:5,
         name:"Others",
         allskills:"firebase , Auth0 , basic knowledge of MERN stack (Monogdb , Express and Node.js) "
+    },
+
+    {
+        id:5,
+        name:"QA skills",
+        allskills:"Manual testing, writing test scripts ,Post man (api testing), selenium automation testing, google Spreedsheets and MS word "
     }
 ]

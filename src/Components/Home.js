@@ -17,15 +17,11 @@ const Home = () => {
 
   const [input,setInput]=useState("")
   const [Email,setEmail]=useState("")
-  const [error,setError]=useState("")
-  function hanldeSubmit(e){
-    e.preventDefault();
-    if(!input||!Email){
-        setError("Please fill all the input above thank you!")
+  
+  
+   
+   
 
-    }
-
-  }
   return (
     <div className="h-auto pb-[20px] relative text-white bg-[#171515]  max-md:px-6 px-10">
       <div
@@ -41,7 +37,7 @@ const Home = () => {
           </p>
           <div className="flex gap-6 items-center">
             <a
-              herf="#project"
+              href="#project"
               className="p-2 cur border-none bg-red-500  rounded-lg text-white"
             >
               view work
@@ -60,7 +56,7 @@ const Home = () => {
             src="https://img.freepik.com/free-vector/new-app-development-desktop_23-2148684987.jpg?w=740&t=st=1678874874~exp=1678875474~hmac=b5163f61f35cdb6266ec75a4a95ce443d2337732dc03ce026ded5cee647e44f6"
           />
         </div>
-      {message && (<Intervalform input={input} Email={Email} setInput={setInput} setSendmessage={setSendmessage} setEmail= {setEmail} hanldeSubmit={hanldeSubmit} error={error} />) }
+      {message && (<Intervalform input={input} Email={Email} setInput={setInput} setSendmessage={setSendmessage} setEmail= {setEmail} />) }
       </div>
 
       <div className="border-none max-sm:right-2 p-2 h-[180px] max-sm:w-[54px] w-[80px] fixed z-10 right-4 flex flex-col gap-4 bottom-[8px]">
