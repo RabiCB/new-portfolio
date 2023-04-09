@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import screenshot from "./ss.png";
 import { motion } from "framer-motion";
+import { saveAs } from "file-saver";
+import pdf from "./cv-io.pdf";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [organisation, setOrgansation] = useState("");
-  const [error,setError]=useState(false)
-  
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdf;
+    link.download = "cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div id="form" className="mt-[50px] ">
       <h2 className="font-semibold text-2xl">Reach out to me</h2>
@@ -60,9 +69,11 @@ const Contact = () => {
               />
             </svg>
           </button>
-         
+
           <div className="flex items-center gap-2">
-           <span className="text-[14px] text-slate-300">Please submit form after filling all input value{" "}</span> 
+            <span className="text-[14px] text-slate-300">
+              Please submit form after filling all input value{" "}
+            </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -85,7 +96,7 @@ const Contact = () => {
           className="flex items-center  justify-center  "
         >
           <a
-            href="https://drive.google.com/file/d/1Vnc-Q79_tSu5EOKcyyK0SNI52wcsbfW-/view?usp=share_link"
+            onClick={handleDownload}
             className="flex items-center justify-center flex-col gap-4  p-2 border-[2px] rounded-lg"
           >
             <img className="h-[200px] rounded-lg" src={screenshot} />

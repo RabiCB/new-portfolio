@@ -26,7 +26,13 @@ export const allprojects=[
         id:5,
         name:"Movie Searching app",
         code:"https://github.com/RabiCB/Movie-searching-app",
-        hostedurl:"movie-tonight-dde18.web.app/",
+        hostedurl:"https://movie-tonight-dde18.web.app/",
+
+    },{
+        id:6,
+        name:"Realstez next.js realstate app",
+        code:"https://github.com/RabiCB/Movie-searching-app",
+        hostedurl:"https://realstez-realstate-web-app-next-js-ddkm.vercel.app/",
 
     }
 ]

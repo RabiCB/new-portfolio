@@ -2,11 +2,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="pt-[50px] px-10 max-md:px-6 bg-[#171515] text-white pb-[20px] ">
+    <div className="pt-[50px] px-10 h-auto max-md:px-6 relative bottom-0  bg-[#171515] text-white pb-[20px] ">
       <div className="max-sm:gap-4 max-md:grid-cols-2 grid grid-cols-3 gap-6 max-md:gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">Contacts</h1>
-          <a className="flex items-center gap-2 max-sm:text-[12px]" href="tel:9823047073">
+          <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">
+            Contacts
+          </h1>
+          <a
+            className="flex items-center gap-2 max-sm:text-[12px]"
+            href="tel:9823047073"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -23,7 +28,10 @@ const Footer = () => {
             </svg>
             <span>+97798230470743</span>
           </a>
-          <a className="flex items-center max-sm:text-[12px] gap-2" href="mailto:rollinrabin@gmail.com">
+          <a
+            className="flex items-center max-sm:text-[12px] gap-2"
+            href="mailto:rollinrabin@gmail.com"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -57,17 +65,74 @@ const Footer = () => {
             </svg>
             <span>9823047073</span>
           </a>
+          <a href="https://www.google.com/maps/place/Kalanki,+Kathmandu" className="flex items-center max-sm:text-[12px] gap-2 underline" >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+              />
+            </svg>
+
+            <span>Kalanki, Kathmandu</span>
+          </a>
         </div>
         <div className="flex flex-col max-sm:text-[12px]  gap-4">
-            <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">Social media</h1>
-            <a className="flex gap-2" href="https://www.facebook.com/rabin.bhn.20"><img className="w-[24px] max-sm:w-[20px] object-contain" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"/><span>Rabin Bhandari</span></a>
-            <a className="flex gap-2" href="https://github.com/RabiCB?tab=repositories"><img className="w-[24px] max-sm:w-[20px]  object-contain" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/><span>RabiCB</span></a>
-            <a className="flex gap-2" href=""><img className="w-[24px] object-contain max-sm:w-[20px] " src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"/><span>Chandra Bhandari</span></a>
+          <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">
+            Social media
+          </h1>
+          <a
+            className="flex gap-2"
+            href="https://www.facebook.com/rabin.bhn.20"
+          >
+            <img
+              className="w-[24px] max-sm:w-[20px] object-contain"
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
+            />
+            <span>Rabin Bhandari</span>
+          </a>
+          <a
+            className="flex gap-2"
+            href="https://github.com/RabiCB?tab=repositories"
+          >
+            <img
+              className="w-[24px] max-sm:w-[20px]  object-contain"
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            />
+            <span>RabiCB</span>
+          </a>
+          <a className="flex gap-2" href="https://www.linkedin.com/in/chandra-bhandari-386b69240">
+            <img
+              className="w-[24px] object-contain max-sm:w-[20px] "
+              src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
+            />
+            <span>Chandra Bhandari</span>
+          </a>
         </div>
         <form className="flex  flex-col gap-4  ">
-            <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">Send me message</h1>
-            <input type="text" className="h-[40px] rounded-lg pl-2 outline-none text-black" placeholder="type something"/>
-            <button className="bg-blue-500 text-white rounded-lg p-2">Send</button>
+          <h1 className="font-semibold text-lg max-sm:text-[1.2rem]">
+            Send me message
+          </h1>
+          <input
+            type="text"
+            className="h-[40px] rounded-lg pl-2 outline-none text-black"
+            placeholder="type something"
+          />
+          <button className="bg-blue-500 text-white rounded-lg p-2">
+            Send
+          </button>
         </form>
       </div>
     </div>

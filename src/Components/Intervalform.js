@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 const Intervalform = ({
   message,
@@ -9,14 +10,6 @@ const Intervalform = ({
   setEmail,
   Email,
 }) => {
-  
- 
-
-  
-
-
-
-
   return (
     <>
       <div className=" flex items-center bg-opacity-80 justify-center rounded-lg bg-[#171515] z-10 absolute top-0 left-0 bottom-0 right-0 flex-col gap-4 ">
@@ -43,7 +36,7 @@ const Intervalform = ({
           whileInView={{ opacity: 1 }}
           oaction="https://getform.io/f/5ac02887-3188-41de-8f0e-a7b168b73f7f"
           method="POST"
-          className="flex flex-col w-[400px] max-sm:w-[340px] gap-4 border-[2px] p-4 rounded-lg shadow opacity-100"
+          className="flex flex-col w-[420px] max-sm:w-[340px] gap-4 border-[2px] p-4 rounded-lg shadow opacity-100"
         >
           <input
             type="text"
@@ -83,7 +76,9 @@ const Intervalform = ({
             </svg>
           </button>
           <div className="flex items-center gap-2">
-           <span className="text-[14px] text-slate-300 max-sm:text-[12px]">Please submit form after filling all input value{" "}</span> 
+            <span className="text-[14px] text-slate-300 max-sm:text-[12px]">
+              Please submit form after filling all input value{" "}
+            </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -99,22 +94,68 @@ const Intervalform = ({
               />
             </svg>
           </div>
+          <div className="flex items-center gap-4">
+            <span className="flex flex-col gap-4 after:">
+              <span className="flex items-center gap-2">
+                <CountUp className="text-xl font-bold" start={10} end={24} duration={6} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-8 h-8 text-yellow-500"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </span>
+
+              <h4 className="text-sm text-white font-bold ">Project done </h4>
+            </span>
+            <span className="flex flex-col gap-4 after:">
+              <span className="flex items-center gap-2">
+                <CountUp className="text-xl font-bold" start={4} end={14} duration={6} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-8 h-8 text-yellow-500"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </span>
+
+              <h4 className="text-sm text-white font-bold ">Project hosted </h4>
+            </span>
+          </div>
         </motion.form>
-        <svg
-          onClick={() => setSendmessage(false)}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.8}
-          stroke="currentColor"
-          className="w-6 h-6 absolute top-8 right-8 cursor-pointer"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
+        <div className="absolute  top-16 right-8 h-10 w-10 flex items-center justify-center transition-all ease-in-out 0.5s hover:text-black hover:bg-gray-200   rounded-full">
+          <svg
+            onClick={() => setSendmessage(false)}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.8}
+            stroke="currentColor"
+            className="w-8 h-8 cursor-pointer "
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
       </div>
     </>
   );

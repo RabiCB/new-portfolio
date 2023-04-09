@@ -21,7 +21,7 @@ const Navigationbar = () => {
     };
   }, [navigation]);
   return (
-    <div ref={ref}  className=" max-md:px-6  flex r sticky top-0 left-0 right-0 z-20 items-center h-10 text-white bg-[#171515] justify-between px-10">
+    <div ref={ref}  className=" max-md:px-6  flex  fixed top-0 left-0 right-0 z-20 items-center h-10 text-white bg-[#171515] justify-between px-10">
      <Link to="/"> <div className="max-md:text-lg font-bold text-white font-serif text-xl flex items-center gap-2 cursor-pointer">
         Port<span className="text-red-500 font-serif">folio</span>
         <motion.div animate={{
