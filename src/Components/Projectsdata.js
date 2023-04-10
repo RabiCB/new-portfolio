@@ -32,7 +32,7 @@ export const allprojects=[
         id:6,
         name:"Realstez next.js realstate app",
         code:"https://github.com/RabiCB/Movie-searching-app",
-        hostedurl:"https://realstez-realstate-web-app-next-js-ddkm.vercel.app/",
+        hostedurl:"https://realstez-realstate-web-app-ddkm.vercel.app/",
 
     }
 ]
