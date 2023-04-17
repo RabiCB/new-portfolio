@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div id="project" className="mt-[50px]">
       <h2 className="font-semibold  max-md:text-lg text-2xl ">Projects</h2>
-      <div className="grid grid-cols-4 mt-6 h-[340px] max-md:h-[400px] max-sm:h-[560px] max-md:grid-cols-3 max-sm:grid-cols-2 gap-8 max-md:gap-4">
+      <div className="grid grid-cols-4 mt-6 h-[360px] max-lg:h-[400px] max-md:h-[500px] max-sm:h-[660px] max-md:grid-cols-3 max-sm:grid-cols-2 gap-8 max-md:gap-4">
         {allprojects.map((projectsg) => {
           return (
             <motion.div

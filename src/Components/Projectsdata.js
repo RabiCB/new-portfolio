@@ -34,5 +34,13 @@ export const allprojects=[
         code:"https://github.com/RabiCB/Movie-searching-app",
         hostedurl:"https://realstez-realstate-web-app-ddkm.vercel.app/",
 
+    },{
+    
+        id:7,
+        name:"foodmania",
+        code:"https://github.com/RabiCB/foodmania-food-ordering-react-app-using-redux-toolkit",
+        hostedurl:"https://foodmania-cd6fc.web.app/",
+
     }
+    
 ]
