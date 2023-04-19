@@ -60,7 +60,7 @@ const Projects = () => {
                 </div>
               )}
               <a
-                className="bg-purple-500 text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[130px] "
+                className="max-sm:w-[100px] bg-purple-500 text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[130px] "
                 href={projectsg.code}
               >
                 Gitude repo
