@@ -9,7 +9,11 @@ const Projects = () => {
   return (
     <div id="project" className="mt-[50px]">
       <h2 className="font-semibold  max-md:text-lg text-2xl ">Projects</h2>
+<<<<<<< HEAD
       <div className="grid grid-cols-4 mt-6 h-[360px] max-lg:h-[400px] max-md:h-[500px] max-sm:h-[740px] max-md:grid-cols-3 max-sm:grid-cols-2 gap-8 max-md:gap-4">
+=======
+      <div className="grid grid-cols-4 mt-6 h-[360px] max-lg:h-[400px] max-md:h-[500px] max-sm:h-[700px] max-md:grid-cols-3 max-sm:grid-cols-2 gap-8 max-md:gap-4">
+>>>>>>> 665f0bd063e61786f8f870f75ee8f5dc28306ec3
         {allprojects.map((projectsg) => {
           return (
             <motion.div
@@ -60,7 +64,11 @@ const Projects = () => {
                 </div>
               )}
               <a
+<<<<<<< HEAD
                 className="bg-purple-500 max-sm:gap-1.5  text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[80%] "
+=======
+                className="max-sm:w-[100px] bg-purple-500 text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[130px] "
+>>>>>>> 665f0bd063e61786f8f870f75ee8f5dc28306ec3
                 href={projectsg.code}
               >
                 Github repo
