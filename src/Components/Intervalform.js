@@ -139,7 +139,7 @@ const Intervalform = ({
             </span>
           </div>
         </motion.form>
-        <div className="absolute  top-16 right-8 h-10 w-10 flex items-center justify-center transition-all ease-in-out 0.5s hover:text-black hover:bg-gray-200   rounded-full">
+        <div className="max-sm:top-14 max-sm:right-2 absolute  top-16 right-8 h-10 w-10 flex items-center justify-center transition-all ease-in-out 0.5s hover:text-black hover:bg-gray-200   rounded-full">
           <svg
             onClick={() => setSendmessage(false)}
             xmlns="http://www.w3.org/2000/svg"

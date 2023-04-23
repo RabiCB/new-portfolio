@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div id="project" className="mt-[50px]">
       <h2 className="font-semibold  max-md:text-lg text-2xl ">Projects</h2>
-      <div className="grid grid-cols-4 mt-6 h-[360px] max-lg:h-[400px] max-md:h-[500px] max-sm:h-[660px] max-md:grid-cols-3 max-sm:grid-cols-2 gap-8 max-md:gap-4">
+      <div className="grid grid-cols-4 mt-6 h-[360px] max-lg:h-[400px] max-md:h-[500px] max-sm:h-[740px] max-md:grid-cols-3 max-sm:grid-cols-2 gap-8 max-md:gap-4">
         {allprojects.map((projectsg) => {
           return (
             <motion.div
@@ -60,17 +60,17 @@ const Projects = () => {
                 </div>
               )}
               <a
-                className="bg-purple-500 text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[130px] "
+                className="bg-purple-500 max-sm:gap-1.5  text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[80%] "
                 href={projectsg.code}
               >
-                Gitude repo
+                Github repo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="max-sm:w-5 max-sm:h-5 w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"
