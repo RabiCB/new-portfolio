@@ -1,21 +1,23 @@
 export const allprojects=[
     {
         id:1,
-        name:"lancemania shop",
-        code:"https://github.com/RabiCB/Ecommerce-web-app-with-admindashboard-reactjs-",
-        hostedurl:"https://lanemania-61f6c.web.app"
-
-    },{
-        id:2,
-        name:"Airhnb mern clone",
-        code:"https://github.com/RabiCB/airnb_full_stack_clone_progression_mern",
+        name:"Social.tuteeline.com",
+      
+        hostedurl:"https://socail.tuteeline.com"
 
     },
     {
         id:3,
-        name:"Staytune the youtube video searching react app",
-        code:"https://github.com/RabiCB/StayTune-Youtube-clone-using-Rapid-Api",
-        hostedurl:"https://staytune-ytclone.web.app",
+        name:"app.tuteeline.com",
+        hostedurl:"https://app.tuteeline.com",
+    },{
+        
+            id:2,
+            name:"Destine",
+            code:"https://github.com/RabiCB/airnb_full_stack_clone_progression_mern",
+            hostedurl:'https://getit-lpg2ro6eq-rabicb.vercel.app/'
+    
+        
     }
     ,{
         id:4,
@@ -24,9 +26,9 @@ export const allprojects=[
         hostedurl:"https://getricth-restro.web.app",
     },{
         id:5,
-        name:"Movie Searching app",
-        code:"https://github.com/RabiCB/Movie-searching-app",
-        hostedurl:"https://movie-tonight-dde18.web.app/",
+        name:"hostelscout.com",
+        code:"https://github.com/RabiCB/hostelscout.com",
+        hostedurl:"https://hostelscout-rnxfg9jwc-rabicb.vercel.app/",
 
     },{
         id:6,

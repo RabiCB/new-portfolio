@@ -18,7 +18,7 @@ const Projects = () => {
               key={projectsg.id}
               className="border-[2px] relative rounded-lg p-2 flex flex-col gap-4"
             >
-              <h1>{projectsg.name}</h1>
+              <h1>{projectsg?.name}</h1>
               {projectsg.hostedurl ? (
                 <a
                   className="bg-blue-500 text-sm flex gap-2 items-center text-white rounded-md p-[4px] w-[100px] "
@@ -61,7 +61,7 @@ const Projects = () => {
               )}
               <a
                 className="bg-purple-500 max-sm:gap-1  text-sm absolute left-2 bottom-2 flex gap-2 items-center text-white rounded-md p-[4px] w-[80%] "
-                href={projectsg.code}
+                href={projectsg?.code ??''}
               >
                 Github repo
                 <svg
